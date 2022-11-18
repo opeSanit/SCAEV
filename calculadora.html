@@ -194,13 +194,13 @@ body.custom-background { background-image: url("https://www.ssaver.gob.mx/riesgo
      
   <div class="container-sm" style="font-size:15px">
   <div class="row">  
-    <div class="col" style="font-size:16px"><center><h6><b><br> DESINFECCIÓN DE AGUA DE USO Y CONSUMO HUMANO CON CLORO DE USO DOMÉSTICO (Hipoclorito de sodio al 6.0%: líquido) E INDUSTRIAL (Hipoclorito de sodio al 13.0% : líquido e Hipoclorito de calcio 65.0%: sólido)</b></h6></center></div>
+    <div class="col" style="font-size:16px"><center><h6><b><br> DESINFECCIÓN DE AGUA DE USO Y CONSUMO HUMANO CON CLORO DE USO DOMÉSTICO (Hipoclorito de sodio al 6.0%: líquido) E INDUSTRIAL (Hipoclorito de sodio al 13.0%: líquido e Hipoclorito de calcio 65.0%: sólido)</b></h6></center></div>
   </div>
   <form name="calculadora">
     <br><br>
   <div class="row">  
     <div class="col-sm-3"><label for="agua" class="form-label"><b>Cantidad de agua a clorar:</b></label></div>
-    <div class="col-sm-3"><input type="number" class="form-control" id="agua" name="agua" aria-describedby="Agua" onChange="sumar()" maxlength="8" style="font-size:15px"></div>
+    <div class="col-sm-2"><input type="number" class="form-control" id="agua" name="agua" aria-describedby="Agua" onChange="sumar()" maxlength="8" style="font-size:15px"></div>
     <div class="col-sm-1" style="font-size:14px"><b>Litros</b></div>
   </div><br>
    <div class="row">  
@@ -225,15 +225,31 @@ body.custom-background { background-image: url("https://www.ssaver.gob.mx/riesgo
     </select></div>
     <div class="col-sm-6" style="font-size:13px"><b>></b>Si no hay evidencia de cloro residual previo, seleccione 1.50 ppm <br> <b>></b>La concentración de 3.0 ppm es exclusivo para albercas </b></div>
   </div><br><br>
-      <div class="row">  
+
+    
+  <div class="card mb-3" style="max-width: 100%;">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title"><br><center>Resultado:</center></h4><br>
+        
+      <div class="row justify-content-md-center">  
         <div class="col-sm-2 text-right"><b>Aplicar:</b></div>
-            <div class="col-sm-3"><input type="resultado" class="form-control" id="resultado" name="resultado" aria-describedby="Mililitros" style="font-size:15px" disabled></div>
+            <div class="col-sm-4"><input type="resultado" class="form-control text-center" id="resultado" name="resultado" aria-describedby="Mililitros" style="font-size:16px" disabled></div>
       </div><br>
-      <div class="row">  
+      <div class="row justify-content-md-center">  
         <div class="col-sm-2 text-right"><b>ó Aplicar:</b></div>
-            <div class="col-sm-1"><input type="resultado2" class="form-control" id="resultado2" name="resultado2" aria-describedby="Gotas" style="font-size:15px" disabled></div>
-        <div class="col-sm-2 text-right" style="font-size:15px"><b>Gotas de cloro</b></div>
+            <div class="col-sm-2"><input type="resultado2" class="form-control text-center" id="resultado2" name="resultado2" aria-describedby="Gotas" style="font-size:16px" disabled></div>
+        <div class="col-sm-2 text-right" style="font-size:15px"><b>Gotas de cloro</b></div>        
       </div><br><br>
+      </div>
+    </div>
+    <div class="col-md-4 justify-content-md-center">
+      <img style="max-width: 60%;" src="https://www.ssaver.gob.mx/proteccioncontrariesgossanitarios/wp-content/uploads/sites/10/2022/09/atencionRecurso-88-768x768.png" class="img-fluid rounded-start" alt="...">
+    </div>
+  </div>
+</div>
+    
         <div class="col-sm-12"><center><h5><b><br>*Observaciones:</b></h5></center></div>
         <div class="col"><br>1.- <b>PPM</b> = Partes Por Millón.</div>
         <div class="col"><br>2.- <b>Los valores estimados por la CALCULADORA son para agua estandar</b>: por lo que considerando las caracteristicas geológicas presentes en la entidad, es conveniente que posterior a la aplicación de cloro, espere al menos 5 minutos y efectue una lectura de cloro residual libre con el kit de monitoreo y DPD1.</div>
@@ -247,6 +263,8 @@ body.custom-background { background-image: url("https://www.ssaver.gob.mx/riesgo
     <p class="has-text-align-center has-background" style="background-color:#abb7c22e"><strong><em>Todo acto y/o trámite&nbsp;es gratuito.</em> </strong><br><em>Material elaborado en cumplimiento a la estrategia nacional de&nbsp;buen gobierno en el sistema&nbsp;federal sanitario</em></p>
 </form>
 </div>
+  
+  
   
 <script>
 function sumar() {
@@ -379,15 +397,5 @@ Tel. 228 842 3000, ext. 2735, 2736</p>
 
 <script src="/fwb/ajaxhook.min.js"></script>
 <script src="/fwb/122710291618_index.js"></script>
-  
-  
-  
-  
-  
-  
-
- 
-  
-  
 
 </html>
